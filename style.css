@@ -1,0 +1,131 @@
+/*=============== base ==================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/*=============== corpo ==================*/
+body {
+    background-color: rgb(48, 47, 47);
+}
+/*=============== cabeçalho ==================*/
+.titulo {
+    position: absolute;
+    margin: 50px;
+    padding-left: 90px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*=============== celular ==================*/
+.celular {
+    width: 300px;
+    height: 600px;
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px 0 rgb(11, 11, 11);
+}
+.capa {
+    position: relative;
+    width: 295px;
+    height: 595px;
+    background-color: black;
+    box-shadow: 0 0 5px 0 black;
+    border-radius: 40px;
+    top: 3px;
+    left: 3px;
+}
+.capa::after {
+    position: absolute;
+    top: 5px;
+    left: 6rem;
+    content: '';
+    width: 100px;
+    height: 23px;
+    background-color: rgb(5, 4, 4);
+    border-radius: 0 0 15px 15px;
+    z-index: 1;
+}
+/*=============== botões ==================*/
+.btn-power {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 9rem;
+    left: 18rem;
+}
+.power {
+    position: relative;
+    left: 5px;
+    width: 8px;
+    height: 60px;
+    background-color: rgb(17, 16, 16);
+    border-radius: 0 5px 5px 0;
+    z-index: -1;
+}
+.icon-power {
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    font-size: 30px;
+}
+.icon-power a {
+    color: black;
+}
+.icon-power a:hover {
+    cursor: pointer;
+    color: #fff;
+}
+/*=============== tela ==================*/
+.tela {
+    position: relative;
+    display: none;
+    width: 280px;
+    height: 580px;
+    top: 8px;
+    left: 8px;
+    background-color: rgb(12, 68, 238);
+    border-radius: 35px;
+}
+.camera-fro {
+    position: absolute;
+    top: 10px;
+    left: 6.5rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(2, 110, 110);
+    border: 2px solid rgb(35, 35, 35);
+    box-shadow: inset 0 0 2px 0 white;
+    z-index: 2;
+}
+.alt-falant {
+    position: absolute;
+    top: 2px;
+    left: 7.8rem;
+    width: 40px;
+    height: 3px;
+    background-color: rgb(28, 28, 28);
+    border-radius: 50px;
+    z-index: 3;
+}
+/*=============== barra ==================*/
+.hora {
+    position: relative;
+    top: 5px;
+    left: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.barra {
+    position: relative;
+    left: 13rem;
+    bottom: 0.8rem;
+}
