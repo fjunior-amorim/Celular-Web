@@ -22,12 +22,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 /*=============== celular ==================*/
 .celular {
     width: 300px;
     height: 600px;
-    margin-top: 15px;
+    margin-top: 5px;
     background-color: #fff;
     border-radius: 40px;
     box-shadow: 0 0 10px 0 rgb(11, 11, 11);
@@ -91,8 +92,17 @@ body {
     height: 580px;
     top: 8px;
     left: 8px;
-    background-color: rgb(12, 68, 238);
+    background-color: rgb(0, 189, 203);
     border-radius: 35px;
+    animation: ligar ease-out 6s;
+}
+@keyframes ligar {
+    0% {
+        background-color: black;
+    }
+    100% {
+        background-color: rgb(0, 162, 173);
+    }
 }
 .camera-fro {
     position: absolute;

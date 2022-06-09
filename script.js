@@ -8,4 +8,16 @@ btnIcon.addEventListener('click', function() {
         tela.style.display = "block";
     }
 });
+//================== hora =======================
+function horario(){
+const data = new Date();
+const hora = data.getHours();
+let min = data.getMinutes();
+let stgmin = min.toString();
+
+if(stgmin.length === 1) min = 0 + stgmin;
+const horaCel = document.querySelector("#hora");
+horaCel.innerHTML = hora + ":" + min;
+}
+setInterval(horario, 1000);
 //=========================================
